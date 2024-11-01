@@ -42,7 +42,7 @@ public class Socio {
 		this.fechaIngreso = fechaIngreso;
 	}
 	public String toString() { 
-		return this.getPersona().getApellido()+",  "+this.getPersona().getNombre();
+		return this.getPersona().getApellido()+" "+this.getPersona().getNombre();
 		
 	}
 

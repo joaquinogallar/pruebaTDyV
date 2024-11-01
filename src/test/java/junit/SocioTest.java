@@ -7,6 +7,9 @@ import exception.YaExisteSocioException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.testng.annotations.DataProvider;
+
+import java.util.Iterator;
 
 
 public class SocioTest {
@@ -38,4 +41,10 @@ public class SocioTest {
 
         nominaSocios.nomina.add(nuevoSocio);
     }
+
+    @Test
+    void testToString() {
+        Assertions.assertEquals(socio.getPersona().getApellido() + " " + socio.getPersona().getNombre(), socio.toString());
+    }
+
 }

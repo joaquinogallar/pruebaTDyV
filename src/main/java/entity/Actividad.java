@@ -65,6 +65,6 @@ public void inscribirSocio(Socio s) throws CupoExcedidoException, EdadInsuficien
 		inscriptos.add(s);
 }
 public String toString() {
-	return this.getNombre()+"  a cargo de "+this.getEncargado().getNombre();
+	return this.getNombre()+" a cargo de "+this.getEncargado().getApellido();
 }
 }

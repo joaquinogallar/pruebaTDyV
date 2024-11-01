@@ -45,4 +45,9 @@ public class ActividadTest {
     void testEncargadoActividadYSocioDeNomina() {
         Assertions.assertTrue(actividad.getInscriptos().contains(encargado), "El encargado no forma parte de la nomina");
     }
+
+    @Test
+    void testToStringActividad() {
+        Assertions.assertEquals(actividad.getNombre() + " a cargo de " + encargado.getPersona().getApellido(), actividad.toString());
+    }
 }
